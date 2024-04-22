@@ -19,3 +19,7 @@ env_logger = "0.11.3"
 dotenv = "0.15.0"
 lazy_static = "1.4.0"
 sea-orm = { version = "0.12", features = [ "sqlx-postgres", "runtime-tokio-rustls", "macros" ] }
+sha256 = "1.5.0"
+chrono = "0.4.37"
+jsonwebtoken = "9.3.0"
+actix-web-lab = "0.20.2"
