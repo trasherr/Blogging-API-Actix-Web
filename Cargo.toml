@@ -23,3 +23,11 @@ sha256 = "1.5.0"
 chrono = "0.4.37"
 jsonwebtoken = "9.3.0"
 actix-web-lab = "0.20.2"
+
+[dependencies.uuid]
+version = "1.8.0"
+features = [
+    "v4",                # Lets you generate random UUIDs
+    "fast-rng",          # Use a faster (but still sufficiently random) RNG
+    "macro-diagnostics", # Enable better diagnostics for compile-time UUIDs
+]

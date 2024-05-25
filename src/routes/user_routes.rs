@@ -11,5 +11,6 @@ pub fn config(config: &mut web::ServiceConfig){
         web::scope("/user")
         .wrap(from_fn(middlewares::auth_middleware::check_auth_middleware))
         .service(handlers::user_handlers::user)
+        .service(handlers::user_handlers::update_user)
     );
 }
